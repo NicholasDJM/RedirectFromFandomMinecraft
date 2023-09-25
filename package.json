@@ -1,6 +1,6 @@
 {
   "name": "redirectfromfandomminecraft",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Attempts to redirect to the equivalent page on Minecraft.wiki.",
   "root": true,
   "private": true,
@@ -54,7 +54,10 @@
     "rules": {
       "indent": [
         "error",
-        "tab"
+        "tab",
+        {
+          "SwitchCase": 1
+        }
       ],
       "linebreak-style": [
         "error",
