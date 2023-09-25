@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Redirect Fandom Minecraft wiki to Minecraft.wiki
 // @namespace    https://github.com/NicholasDJM/RedirectFromFandomMinecraft
-// @version      1.1.0
+// @version      1.1.1
 // @description  Attempts to redirect to the equivalent page on Minecraft.wiki.
 // @author       Nicholas Miller
 // @updateURL    https://raw.githubusercontent.com/NicholasDJM/RedirectFromFandomMinecraft/main/redirectFromFandomMinecraft.user.js
 // @downloadURL  https://raw.githubusercontent.com/NicholasDJM/RedirectFromFandomMinecraft/main/redirectFromFandomMinecraft.user.js
 // @match        https://minecraft.fandom.com/wiki/*
+// @match        https://minecraft-archive.fandom.com/wiki/*
 // @icon         https://icons.duckduckgo.com/ip2/minecraft.wiki.ico
 // @grant        none
 // @run-at       document-start
