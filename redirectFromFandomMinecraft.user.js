@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redirect Fandom Minecraft wiki to Minecraft.wiki
 // @namespace    https://github.com/NicholasDJM/RedirectFromFandomMinecraft
-// @version      1.1.1
+// @version      1.1.2
 // @description  Attempts to redirect to the equivalent page on Minecraft.wiki.
 // @author       Nicholas Miller
 // @updateURL    https://raw.githubusercontent.com/NicholasDJM/RedirectFromFandomMinecraft/main/redirectFromFandomMinecraft.user.js
@@ -34,8 +34,17 @@
 			href("https://minecraft.wiki");
 			break;
 		}
+		case "https://minecraft-archive.fandom.com/wiki/Minecraft_Wiki": {
+			href("https://minecraft.wiki");
+			break;
+		}
 		default: {
-			href("https://minecraft.wiki/w/" + href().split("https://minecraft.fandom.com/wiki/")[1]);
+			if (href().split("https://minecraft.fandom.com/wiki/").length > 1) {
+				href("https://minecraft.wiki/w/" + href().split("https://minecraft.fandom.com/wiki/")[1]);
+			}
+			if (href().split("https://minecraft-archive.fandom.com/wiki/").length > 1) {
+				href("https://minecraft.wiki/w/" + href().split("https://minecraft-archive.fandom.com/wiki/")[1]);
+			}
 		}
 	}
 })();
