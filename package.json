@@ -1,0 +1,100 @@
+{
+  "name": "redirectfromfandomminecraft",
+  "version": "1.0.0",
+  "description": "Attempts to redirect to the equivalent page on Minecraft.wiki.",
+  "root": true,
+  "private": true,
+  "scripts": {
+    "lint": "eslint --fix **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasDJM/RedirectFromFandomMinecraft.git"
+  },
+  "keywords": [
+    "userscript"
+  ],
+  "author": "Nicholas Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NicholasDJM/RedirectFromFandomMinecraft/issues"
+  },
+  "homepage": "https://github.com/NicholasDJM/RedirectFromFandomMinecraft#readme",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "eslint-plugin-userscripts": "^0.2.13"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "es2022": true,
+      "greasemonkey": true
+    },
+    "plugins": [
+      "unicorn",
+      "userscripts"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:unicorn/recommended",
+      "plugin:userscripts/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
+    "ignorePatterns": [],
+    "globals": {},
+    "settings": {
+      "userscriptVersions": {
+        "tampermonkey": "4.16.0"
+      }
+    },
+    "rules": {
+      "indent": [
+        "error",
+        "tab"
+      ],
+      "linebreak-style": [
+        "error",
+        "windows"
+      ],
+      "quotes": [
+        "warn",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-unused-vars": "off",
+      "comma-spacing": "error",
+      "camelcase": "warn",
+      "no-var": "error",
+      "no-warning-comments": "warn",
+      "yoda": "warn",
+      "no-constant-condition": [
+        "error",
+        {
+          "checkLoops": false
+        }
+      ],
+      "unicorn/consistent-function-scoping": "warn",
+      "unicorn/filename-case": [
+        "error",
+        {
+          "case": "camelCase"
+        }
+      ],
+      "unicorn/prefer-query-selector": "warn",
+      "unicorn/prefer-dom-node-dataset": "off",
+      "unicorn/prefer-module": "off",
+      "unicorn/numeric-separators-style": "off",
+      "unicorn/expiring-todo-comments": "off",
+      "userscripts/compat-headers": "error",
+      "userscripts/use-homepage-and-url": "error",
+      "userscripts/use-download-and-update-url": "error"
+    }
+  }
+}
