@@ -4,6 +4,8 @@
 
 Attempts to redirect from [minecraft.fandom.com](https://minecraft.fandom.com) to the equivalent page on [minecraft.wiki](https://minecraft.wiki).
 
+Currently only works for the English version of the Wikis.
+
 # Installation
 1. In order to use this script you must have a UserScript Extension, like [TamperMonkey](https://tampermonkey.net).
 2. Once that's installed to your browser of choice, [click here to install the script](https://raw.githubusercontent.com/NicholasDJM/RedirectFromFandomMinecraft/main/redirectFromFandomMinecraft.user.js).
